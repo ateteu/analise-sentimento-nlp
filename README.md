@@ -43,19 +43,16 @@ Foram treinados dois modelos:
 
 ## Resultados
 
-| Vetorizador | Modelo              | Acurácia |
+| Vetorizador| Modelo               | Acurácia |
 |------------|----------------------|----------|
 | BoW        | Regressão Logística  | 86.32%   |
 | BoW        | Naive Bayes          | 81.57%   |
 | TF-IDF     | Regressão Logística  | 88.37%   |
 | TF-IDF     | Naive Bayes          | 83.22%   |
 
-## Conclusões
+## Conclusões e aprendizados
 
-- TF-IDF apresentou melhor desempenho que BoW
-- Regressão Logística superou Naive Bayes
-- A combinação TF-IDF + Regressão Logística foi a melhor
-
-## Licença
-
-Este projeto está disponível sob a licença MIT.
+- Como esperado, o TF-IDF superou o BoW, pois reduz o peso de palavras excessivamente frequentes e destaca termos mais relevantes
+- Regressão Logística superou Naive Bayes nesse cenário, se mostrando capaz de captar melhor a relação entre features
+- A combinação TF-IDF + Regressão Logística foi a melhor das combinações testadas
+- A redução de ruído no vocabulário é importante; o uso de `min_df=5` ajudou a eliminar palavras com frequência muito baixa
