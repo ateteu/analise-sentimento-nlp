@@ -56,3 +56,5 @@ Foram treinados dois modelos:
 - Regressão Logística superou Naive Bayes nesse cenário, se mostrando capaz de captar melhor a relação entre features
 - A combinação TF-IDF + Regressão Logística foi a melhor das combinações testadas
 - A redução de ruído no vocabulário é importante; o uso de `min_df=5` ajudou a eliminar palavras com frequência muito baixa
+
+No geral, este projeto ajudou a consolidar conhecimento básico de NLP e serve como base para futuros experimentos e aprendizados mais avançados na área.
